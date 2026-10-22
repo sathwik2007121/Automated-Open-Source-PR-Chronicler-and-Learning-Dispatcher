@@ -1,0 +1,55 @@
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [TEST_OBSERVABILITY] Validating log file presence and write path.
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='closed' | Repo='octocat/Hello-World' | PR #100 | Title='Merge feature into main'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [EVENT_DECISION] Status=ACCEPTED | Repo='octocat/Hello-World' | PR #100 | Reason='Pull request was merged. Executing context hydration, LCEL synthesis, and email dispatch.'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [PIPELINE_COMPLETE] Merged PR #100 processed in 0.00s | Email Dispatched: True
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='closed' | Repo='octocat/Hello-World' | PR #100 | Title='Merge feature'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='octocat/Hello-World' | PR #100 | Reason='Duplicate event delivery detected (delivery-already-seen). Skipping to maintain idempotency.'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='closed' | Repo='octocat/Hello-World' | PR #11 | Title='Discarded PR'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='octocat/Hello-World' | PR #11 | Reason='Pull request action was 'closed' but merged status is False. PR was discarded or rejected.'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='opened' | Repo='octocat/Hello-World' | PR #10 | Title='New feature'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='octocat/Hello-World' | PR #10 | Reason='Event action 'opened' is not 'closed'. Pipeline executes only when a PR is merged.'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='synchronize' | Repo='octocat/Hello-World' | PR #12 | Title='Updated commits'
+2026-10-22 11:51:58 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='octocat/Hello-World' | PR #12 | Reason='Event action 'synchronize' is not 'closed'. Pipeline executes only when a PR is merged.'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [TEST_OBSERVABILITY] Validating log file presence and write path.
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='closed' | Repo='octocat/Hello-World' | PR #100 | Title='Merge feature into main'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [EVENT_DECISION] Status=ACCEPTED | Repo='octocat/Hello-World' | PR #100 | Reason='Pull request was merged. Executing context hydration, LCEL synthesis, and email dispatch.'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [PIPELINE_COMPLETE] Merged PR #100 processed in 0.00s | Email Dispatched: True
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='closed' | Repo='octocat/Hello-World' | PR #100 | Title='Merge feature'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='octocat/Hello-World' | PR #100 | Reason='Duplicate event delivery detected (delivery-already-seen). Skipping to maintain idempotency.'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='closed' | Repo='octocat/Hello-World' | PR #11 | Title='Discarded PR'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='octocat/Hello-World' | PR #11 | Reason='Pull request action was 'closed' but merged status is False. PR was discarded or rejected.'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='opened' | Repo='octocat/Hello-World' | PR #10 | Title='New feature'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='octocat/Hello-World' | PR #10 | Reason='Event action 'opened' is not 'closed'. Pipeline executes only when a PR is merged.'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='synchronize' | Repo='octocat/Hello-World' | PR #12 | Title='Updated commits'
+2026-10-22 11:52:32 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='octocat/Hello-World' | PR #12 | Reason='Event action 'synchronize' is not 'closed'. Pipeline executes only when a PR is merged.'
+2026-10-22 11:52:41 [INFO] [pr_chronicler] =================================================================
+2026-10-22 11:52:41 [INFO] [pr_chronicler] Starting Automated Open-Source PR Chronicler & Learning Dispatcher
+2026-10-22 11:52:41 [INFO] [pr_chronicler] Gemini Model: gemini-2.5-flash
+2026-10-22 11:52:41 [INFO] [pr_chronicler] GitHub Auth Configured: No (using unauthenticated rate limits)
+2026-10-22 11:52:41 [INFO] [pr_chronicler] SMTP Configured: No (credentials missing in environment)
+2026-10-22 11:52:41 [INFO] [pr_chronicler] Recipient Inbox: Not configured
+2026-10-22 11:52:41 [INFO] [pr_chronicler] =================================================================
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='closed' | Repo='pallets/flask' | PR #5000 | Title='Migrate configuration to modern pyproject.toml'
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [EVENT_DECISION] Status=ACCEPTED | Repo='pallets/flask' | PR #5000 | Reason='Pull request was merged. Executing context hydration, LCEL synthesis, and email dispatch.'
+2026-10-22 11:53:42 [ERROR] [pr_chronicler] [GITHUB_API] Endpoint='https://api.github.com/repos/pallets/flask/pulls/5000/files?per_page=100&page=1' | StatusCode=0 | Error='[Errno 8] nodename nor servname provided, or not known'
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [DIFF_METRICS] Total Files=0 | Diff/Patch Total Characters=27
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [CONTEXT_HYDRATION] Found linked issue reference(s): [4999] in PR #5000
+2026-10-22 11:53:42 [ERROR] [pr_chronicler] [GITHUB_API] Endpoint='https://api.github.com/repos/pallets/flask/issues/4999' | StatusCode=0 | Error='[Errno 8] nodename nor servname provided, or not known'
+2026-10-22 11:53:42 [WARNING] [pr_chronicler] [SYNTHESIZER] GOOGLE_API_KEY is not set. Synthesis will use grounded fallback reflection if called.
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [SYNTHESIZER] Using offline grounded reflection generator.
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [PARSER_OUTPUT] Raw Generated JSON:
+{
+  "issue_details": "Requirement identified in pallets/flask #5000: Migrate configuration to modern pyproject.toml. Addressed missing functionality or bug fix per repo guidelines.",
+  "execution_summary": "Modified files (None) comprising 27 characters of code changes. Refactored logic to address requirements while preserving backward compatibility.",
+  "key_learnings": [
+    "Event-driven hydration of pull request diffs (27 chars) provides direct source-of-truth evidence over speculative PR descriptions.",
+    "Asynchronous GitHub API pagination prevents truncated code context during large multi-file refactors.",
+    "Strict Pydantic schema validation ensures downstream email dispatches always conform to structured contract expectations."
+  ]
+}
+2026-10-22 11:53:42 [ERROR] [pr_chronicler] [SMTP_FAILURE] Transmission failed to '' | Details: SMTP_EMAIL or SMTP_APP_PASSWORD is not set in environment. Skipping live email dispatch.
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [PIPELINE_COMPLETE] Merged PR #5000 processed in 0.01s | Email Dispatched: False
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='closed' | Repo='pallets/flask' | PR #5001 | Title='Experimental refactor closed without merging'
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='pallets/flask' | PR #5001 | Reason='Pull request action was 'closed' but merged status is False. PR was discarded or rejected.'
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [WEBHOOK_RECEIPT] Action='opened' | Repo='pallets/flask' | PR #5002 | Title='WIP: Add new feature'
+2026-10-22 11:53:42 [INFO] [pr_chronicler] [EVENT_DECISION] Status=IGNORED | Repo='pallets/flask' | PR #5002 | Reason='Event action 'opened' is not 'closed'. Pipeline executes only when a PR is merged.'

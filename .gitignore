@@ -1,0 +1,33 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Compiled binaries and C++ files
+*.o
+*.out
+*.dSYM/
+*.cpp
+*.hpp
+*.java
+binary_tree
+middleware_example
+mirror_tree
+steps
+structAlien
+using_pair
+x
+
+# Legacy non-project scripts
+bot_api.py
+chat_memory.py
+frontend.py
+legacy_jargon_main.py
+personas_data.py
+semantic_router.py
+semantic_web.py
+test_app.py
+web_app.py
